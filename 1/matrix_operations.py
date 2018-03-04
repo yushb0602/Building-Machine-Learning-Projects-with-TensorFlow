@@ -20,5 +20,6 @@ tf.transpose(x).eval() # Transpose matrix
 tf.matmul(x, y).eval() # Matrix multiplication
 tf.matrix_determinant(floatx).eval() # Matrix determinant
 tf.matrix_inverse(floatx).eval() # Matrix inverse
-tf.matrix_solve(floatx, [[1],[1],[1],[1]]).eval() # Solve Matrix system
+a=tf.matrix_solve(floatx, [[1],[1],[1],[1]]).eval() # Solve Matrix system
+print(a)
 
