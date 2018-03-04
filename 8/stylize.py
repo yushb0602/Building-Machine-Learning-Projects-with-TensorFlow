@@ -107,7 +107,7 @@ def stylize(network, initial, initial_noiseblend, content, styles, preserve_colo
             style_losses = []
             for style_layer in STYLE_LAYERS:
                 layer = net[style_layer]
-                _, height, width, number = map(lambda i: i.value, layer.get_shape())
+                _, height, width, number = [i.value for i in layer.get_shape()]
                 size = height * width * number
                 feats = tf.reshape(layer, (-1, number))
                 gram = tf.matmul(tf.transpose(feats), feats) / size

@@ -9,7 +9,7 @@ plt.figure() # Create a new figure
 plt.scatter(trX,trY) #Plot a scatter draw of the random datapoints
 plt.plot (trX, .2 + 2 * trX) # Draw one line with the line function
 
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 import matplotlib.pyplot as plt
 import tensorflow as tf
@@ -58,8 +58,8 @@ for i in range(100):
     plt.plot (trX, b0temp + b1temp * trX )
 
 
-print  sess.run(w) # Should be around 2 
-print sess.run(b) #Should be around 0.2
+print((sess.run(w))) # Should be around 2 
+print((sess.run(b))) #Should be around 0.2
 
 
 plt.scatter(trX,trY)

@@ -4,7 +4,7 @@ import numpy as np
 tf.app.flags.DEFINE_integer("numsamples", "100","Number of samples per server")
 FLAGS = tf.app.flags.FLAGS
 
-print ("Sample number per server: " + str(FLAGS.numsamples)	)
+print(("Sample number per server: " + str(FLAGS.numsamples)	))
 cluster = tf.train.ClusterSpec({"local": ["ec2-52-90-57-240.compute-1.amazonaws.com:2222", "ec2-54-196-135-128.compute-1.amazonaws.com:2222"]})
 
 c=[]

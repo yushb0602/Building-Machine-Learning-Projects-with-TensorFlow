@@ -38,7 +38,7 @@ for i, j in zip(te_data, te_features):
     #print tr_features[sess.run(neighbor)]
     #print j
     test.append(tr_features[sess.run(neighbor)])
-print test
+print(test)
 fig, ax = plt.subplots()
 ax.scatter(te_data.transpose()[0], te_data.transpose()[1], marker = 'o', s = 100, c = test, cmap=plt.cm.coolwarm )
 plt.plot()
@@ -49,7 +49,7 @@ plt.plot()
 #print(sess.run(tf.square(rep_points_v - rep_points_h)))
 
 end = time.time()
-print ("Found in %.2f seconds" % (end-start))
-print "Cluster assignments:", test
+print(("Found in %.2f seconds" % (end-start)))
+print("Cluster assignments:", test)
 
 

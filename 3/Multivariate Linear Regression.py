@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 df = pd.read_csv("data/boston.csv", header=0)
-print df.describe()
+print((df.describe()))
 
 f, ax1 = plt.subplots()
 plt.figure() # Create a new figure

@@ -105,10 +105,10 @@ plt.show()
 
 
 end = time.time()
-print ("Found in %.2f seconds" % (end-start)), iters, "iterations"
-print "Centroids:"
-print centers
-print "Cluster assignments:", assignments
+print(("Found in %.2f seconds" % (end-start)), iters, "iterations")
+print("Centroids:")
+print(centers)
+print("Cluster assignments:", assignments)
 
 
 

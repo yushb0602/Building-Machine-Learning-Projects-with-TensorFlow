@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 import matplotlib.pyplot as plt 
 import tensorflow as tf
 
@@ -16,7 +16,7 @@ display_step = 1
 sess = tf.Session()
 b=np.zeros((100,2))
 #print pd.get_dummies(df['admit']).values[1]
-print sess.run(tf.one_hot(indices = [1, 3, 2, 4], depth=5, on_value = 1, off_value = 0, axis = 1 , name = "a"))
+print(sess.run(tf.one_hot(indices = [1, 3, 2, 4], depth=5, on_value = 1, off_value = 0, axis = 1 , name = "a")))
 #print a.eval(session=sess)
 
 
@@ -74,13 +74,13 @@ with tf.Session() as sess:
         # Display logs per epoch step
 
         if epoch % display_step == 0:
-            print "Epoch:", '%05d' % (epoch+1), "cost=", "{:.8f}".format(avg_cost)
+            print("Epoch:", '%05d' % (epoch+1), "cost=", "{:.8f}".format(avg_cost))
             
             #Generate a new graph, and add it to the complete graph
             
             trX = np.linspace(-30, 30, 100) 
-            print (b.eval())
-            print (W.eval())
+            print((b.eval()))
+            print((W.eval()))
             Wdos=2*W.eval()[0][0]/11.721327
             bdos=2*b.eval()[0]
             

@@ -6,9 +6,6 @@ d = tf.add(a,b, name="add_d")
 e = tf.add(c,d, name="add_e")
 
 sess = tf.Session()
-sess.run(e)
 output = sess.run(e)
-
+print(output)
 writer = tf.summary.FileWriter('/tmp/tensorflow_logs', graph=sess.graph)
-
-print(sess.run(e))

@@ -13,4 +13,4 @@ tf.argmin(x, 1).eval() # Position of the maximum value of columns
 tf.argmax(x, 1).eval() # Position of the minimum value of rows
 tf.setdiff1d(listx, listy)[0].eval() # List differences
 tf.where(boolx).eval() # Show true values
-print(tf.unique(listx)[0].eval()) # Unique values in list
+print((tf.unique(listx)[0].eval())) # Unique values in list

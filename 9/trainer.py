@@ -83,7 +83,7 @@ def main(_):
           for (x, y) in zip(trX, trY): 
               _, step = sess.run([train_op, global_step],feed_dict={X: x, Y: y})
           #Print the partial results, and the current node doing the calculation
-          print ("Partial result from node: " + str(FLAGS.task_index) + ", w: " + str(w.eval(session=sess))+ ", b0: " + str(b.eval(session=sess)))
+          print(("Partial result from node: " + str(FLAGS.task_index) + ", w: " + str(w.eval(session=sess))+ ", b0: " + str(b.eval(session=sess))))
     # Ask for all the services to stop.
     sv.stop()
 
